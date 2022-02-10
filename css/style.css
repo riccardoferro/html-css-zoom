@@ -4,19 +4,28 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: white;
+  font-family: sans-serif;
 }
 
-.wrapper {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-}
+/*********** start mini header section ********/
 
 .mini-header {
+  justify-content: flex-end;
   width: 100%;
-  height: 40px;
   display: flex;
+  background-color: black;
 }
+
+.mini-header a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+/********* / mini header  ********/
+
+/*********  start section main  *********/
 
 main {
   display: flex;
@@ -24,28 +33,53 @@ main {
   background-color: red;
 }
 
+/********* / start section main  *********/
+
+/*********  start section footer  *********/
+
 footer {
   display: flex;
   height: 50px;
   width: 100%;
+  background-color: hsl(0deg 0% 13%);
 }
 
+/********* / section footer  *********/
+
 /****** UTILITY ******/
+
+/* class container  */
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* class that make a button  */
+
+.btn {
+  background-color: gray;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-size: 0.6rem;
+}
 
 /****** / UTILITY ******/
 
 /****** DEBUG ******/
 
-.debug .mini-header {
+/* .debug .mini-header {
   border: 1px solid black;
-}
+} */
 
-.debug main {
+/* .debug main {
   border: 1px solid green;
-}
+} */
 
-.debug footer {
+/* .debug footer {
   border: 1px solid blue;
-}
+} */
 
 /****** / DEBUG ******/
